@@ -1,4 +1,3 @@
-
 import csv
 
 apartments = []
@@ -78,5 +77,4 @@ while True:
         print("Invalid choice, choose from 1 to 7")
 
     print("==========================")
-
 
