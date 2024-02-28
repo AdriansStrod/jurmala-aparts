@@ -28,15 +28,38 @@ while True:
     choice = input("Enter your choice (1-6): ")
 
     if choice == '1':
+        number = input('print apartaments by sequence number')
+        apartaments = int(number) - 1
+        print(apartments[apartaments])
+
         # https://www.w3schools.com/python/python_lists_access.asp
+
         pass
     elif choice == '2':
+        print("last 10 apartaments from list:")
+        def myfunc(a):
+            return int(a[-1])
+        apartments.sort(key = myfunc)
+        print(apartments[-11:])
+           
         # https://www.w3schools.com/python/python_lists_sort.asp
         pass
     elif choice == '3':
+         print("first 10 apartaments from list:")
+         def myfunc(apartments):
+            return int(apartments[-1])
+         apartments.sort(key = myfunc)
+         print(apartments[:11])
+         
         # https://www.w3schools.com/python/python_lists_sort.asp
-        pass
+         pass
     elif choice == '4':
+        c= []
+        cena = int(input("you're limit:"))
+        for apartament in apartments:
+         if int(apartament[-1]) <= cena:
+            c.append(apartament)
+            print(c)
         # https://www.w3schools.com/python/python_lists_comprehension.asp
         # https://www.w3schools.com/python/python_lists_access.asp - Range of Indexes
         pass
